@@ -18,7 +18,7 @@ const experience = [
   {
     role: 'Community Manager',
     company: 'Experiment 9',
-    period: 'Nov 2025 — Jul 2026',
+    period: 'Nov 2025 - Jul 2026',
     summary:
       'Led daily community communication, translated project updates into clear member-facing content, and kept feedback flowing back to the team.',
     points: [
@@ -29,7 +29,7 @@ const experience = [
   {
     role: 'Core Collaboration Manager & Project Advisor',
     company: 'Web3 Delivery',
-    period: 'Nov 2022 — Nov 2025',
+    period: 'Nov 2022 - Nov 2025',
     summary:
       'Connected Web3 teams and communities, advised projects on outreach, and coordinated cross-functional collaboration from first contact through execution.',
     points: [
@@ -40,7 +40,7 @@ const experience = [
   {
     role: 'Community Moderator',
     company: 'The New Resistance',
-    period: 'Mar 2021 — Mar 2023',
+    period: 'Mar 2021 - Mar 2023',
     link: 'https://x.com/TNR_NFT_GAME',
     summary:
       'Supported a play-to-earn gaming and NFT community through events, member care, referrals, and cross-team community programs.',
@@ -52,7 +52,7 @@ const experience = [
   {
     role: 'Chemistry Teacher',
     company: 'Cahaya Cendikia Tuition Center',
-    period: 'Apr 2019 — Oct 2022',
+    period: 'Apr 2019 - Oct 2022',
     summary:
       'Created interactive lessons and individualized feedback for senior high school students while collaborating with colleagues on learning plans.',
     points: [],
@@ -60,7 +60,7 @@ const experience = [
   {
     role: 'Mathematics Teacher',
     company: 'Toyota Indonesia Community Academy (AKTI)',
-    period: 'Jul 2019 — Jun 2022',
+    period: 'Jul 2019 - Jun 2022',
     summary:
       'Mentored college students, researched learning behavior, and integrated technology to improve engagement and critical thinking.',
     points: [],
@@ -198,7 +198,7 @@ export default function Home() {
             <span> active communities.</span>
           </h1>
           <p className="hero-intro">
-            I&apos;m Mirza Upa Orvala — a Web3 community manager, collaboration
+            I&apos;m Mirza Upa Orvala, a Web3 community manager, collaboration
             specialist, and project advisor who connects people, partnerships,
             and ideas that move communities forward.
           </p>
@@ -346,12 +346,12 @@ export default function Home() {
         <div className="credentials-block">
           <div className="mini-heading"><GraduationCap aria-hidden="true" /><span>Education</span></div>
           <article>
-            <time>2020 — 2023</time>
+            <time>2020 - 2023</time>
             <h3>Bachelor&apos;s in Information Systems</h3>
             <p>Bina Nusantara University · GPA 3.62/4</p>
           </article>
           <article>
-            <time>2016 — 2019</time>
+            <time>2016 - 2019</time>
             <h3>Associate Degree in Electrical Engineering</h3>
             <p>State Polytechnic of Jakarta · GPA 3.32/4</p>
           </article>
