@@ -162,12 +162,15 @@ svg { stroke-width: 1.8; }
 .engagement-card p { margin: 0; color: #afbec1; font-size: .87rem; line-height: 1.55; }
 
 .project-section { padding-bottom: 40px; }
+.projects-list { display: grid; gap: 18px; }
 .project-card { min-height: 390px; display: grid; grid-template-columns: 160px minmax(0, 1fr) 210px; gap: 36px; padding: 50px; border-radius: 20px; background: #dcebe9; }
+.project-card:nth-child(even) { background: #e7eded; }
 .project-number { color: #327f7b; font: 800 .85rem var(--font-heading); }
 .project-content { align-self: center; }
 .project-content h3 { margin: 14px 0 18px; font: 700 clamp(2.7rem, 5vw, 5rem)/1 var(--font-heading); letter-spacing: -.065em; }
 .project-content > p:not(.eyebrow) { max-width: 610px; margin: 0; color: #3e5559; font-size: 1.04rem; line-height: 1.65; }
-.project-content a { display: inline-flex; align-items: center; gap: 7px; margin-top: 29px; font-size: .88rem; font-weight: 800; }
+.project-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 29px; }
+.project-content a { display: inline-flex; align-items: center; gap: 7px; font-size: .88rem; font-weight: 800; }
 .project-content a svg { width: 16px; }
 .project-tags { align-self: end; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
 .project-tags span { padding: 7px 11px; border: 1px solid #abcac6; border-radius: 999px; color: #325b5d; font-size: .72rem; }
