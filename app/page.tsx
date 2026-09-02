@@ -18,6 +18,7 @@ const experience = [
   {
     role: 'Community Manager',
     company: 'Experiment 9',
+    link: 'https://x.com/AGDSTUDIOS',
     period: 'Nov 2025 - Jul 2026',
     summary:
       'Led daily community communication, translated project updates into clear member-facing content, and kept feedback flowing back to the team.',
@@ -135,6 +136,33 @@ const publications = [
   {
     year: '2019',
     title: 'Server Maintenance of the Java and Bali Master Station Systems',
+  },
+];
+
+const projects = [
+  {
+    number: '01',
+    role: 'Creator & web developer',
+    name: 'Crayon Rush',
+    description:
+      'A responsive Web3 art and browser-game platform with daily leaderboards, Rush Points, and on-chain achievement tracking.',
+    links: [
+      { label: 'Visit crayonrush.fun', href: 'https://crayonrush.fun' },
+      { label: 'View on GitHub', href: 'https://github.com/kakhamirza-cloud/CrayonRush' },
+    ],
+    tags: ['Web development', 'Web3', 'Community product'],
+  },
+  {
+    number: '02',
+    role: 'Discord bot developer',
+    name: 'Spark Stones',
+    description:
+      'A maintained Discord automation bot for the Spark Stones community, featuring $Stone points, loot boxes, and community engagement systems.',
+    links: [
+      { label: 'View on GitHub', href: 'https://github.com/kakhamirza-cloud/StoneBot' },
+      { label: 'Visit Spark Stones', href: 'https://x.com/Sparkstones' },
+    ],
+    tags: ['TypeScript', 'Discord bot', 'Automation'],
   },
 ];
 
@@ -300,24 +328,29 @@ export default function Home() {
       </section>
 
       <section className="section shell project-section">
-        <SectionHeading eyebrow="Featured project" title="Building beyond community." />
-        <article className="project-card">
-          <div className="project-number">01</div>
-          <div className="project-content">
-            <p className="eyebrow">Creator & web developer</p>
-            <h3>Crayon Rush</h3>
-            <p>
-              A responsive Web3 art and browser-game platform with daily
-              leaderboards, Rush Points, and on-chain achievement tracking.
-            </p>
-            <a href="https://crayonrush.fun" target="_blank" rel="noreferrer">
-              Visit crayonrush.fun <ArrowUpRight aria-hidden="true" />
-            </a>
-          </div>
-          <div className="project-tags" aria-label="Project capabilities">
-            <span>Web development</span><span>Web3</span><span>Community product</span>
-          </div>
-        </article>
+        <SectionHeading eyebrow="Featured projects" title="Building beyond community." />
+        <div className="projects-list">
+          {projects.map((project) => (
+            <article className="project-card" key={project.name}>
+              <div className="project-number">{project.number}</div>
+              <div className="project-content">
+                <p className="eyebrow">{project.role}</p>
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+                <div className="project-links">
+                  {project.links.map((link) => (
+                    <a href={link.href} target="_blank" rel="noreferrer" key={link.href}>
+                      {link.label} <ArrowUpRight aria-hidden="true" />
+                    </a>
+                  ))}
+                </div>
+              </div>
+              <div className="project-tags" aria-label={`${project.name} capabilities`}>
+                {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="section shell about-grid" id="about">
