@@ -4,7 +4,6 @@ import {
   BookOpen,
   BriefcaseBusiness,
   CheckCircle2,
-  Download,
   GraduationCap,
   Mail,
   MapPin,
@@ -236,13 +235,6 @@ export default function Home() {
               href="mailto:kakhamirza@gmail.com"
             >
               Start a conversation <ArrowUpRight aria-hidden="true" />
-            </a>
-            <a
-              className={cn(buttonVariants({ variant: 'outline', size: 'lg' }), 'secondary-action')}
-              href="/Mirza-Upa-Orvala-CV.pdf"
-              download
-            >
-              <Download aria-hidden="true" /> Download CV
             </a>
           </div>
         </div>
